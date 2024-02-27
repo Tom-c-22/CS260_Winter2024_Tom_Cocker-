@@ -20,7 +20,7 @@ public:
         while (cur_node != nullptr) {
             node* next = cur_node->next; // keeps track of next node in list
             delete cur_node; // deletes current node
-            cur_node = next;             // goes to next node in list
+            cur_node = next; // goes to next node in list
         }
     }
 
