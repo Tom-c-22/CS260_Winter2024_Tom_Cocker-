@@ -125,8 +125,7 @@ void test_autosort_list_search_dne() { // searches for -non-existing value
     cout << "test_autosort_list_search_dne passed.\n";
 }
 
-// main
-int main() {
+int main() { // main
     test_autosort_list_constructor();
     test_autosort_list_insert_first_node();
     test_autosort_list_insert_second_node();
