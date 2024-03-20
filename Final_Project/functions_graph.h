@@ -149,8 +149,9 @@ void Graph::dijkstras(char source_letter) { // Dijkstra's algorithm
 Node *Graph::find_node(char letter) { // finds node using its indicator letter
     for (Node *node : nodes) {
         if (node->letter == letter) 
-            return nullptr; 
-}
+            return node; // Return the node if the letter matches
+    }
+    return nullptr; // Return nullptr if no matching node is found
 }
 
 int Graph::node_index(Node *node) { // returns node index from graphs node list
